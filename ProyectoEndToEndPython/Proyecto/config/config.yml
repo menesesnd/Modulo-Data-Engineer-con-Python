@@ -1,0 +1,8 @@
+cloud_storage: 
+    credentials: /user/app/ProyectoEndToEndPython/Clases/1.Data Ingest/datadep12-387121-69e38bbe590c.json 
+
+azure_storage:
+    connection_string: BlobEndpoint=https://menesesnd.blob.core.windows.net/;QueueEndpoint=https://menesesnd.queue.core.windows.net/;FileEndpoint=https://menesesnd.file.core.windows.net/;TableEndpoint=https://menesesnd.table.core.windows.net/;SharedAccessSignature=sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2023-06-25T00:29:38Z&st=2023-06-16T16:29:38Z&spr=https,http&sig=r8m5HpmXpfOlVk%2B97PPVyhjuFftKlZ7MIe2slHJcITo%3D
+
+mongo_db:
+    connection_string: mongodb+srv://menesesnd:1234@clusterbase.657gs1f.mongodb.net/?retryWrites=true&w=majority

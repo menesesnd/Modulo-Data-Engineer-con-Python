@@ -1,0 +1,63 @@
+Instalacion de apache airflow en entorno virtual 
+
+codigos apache airflow
+#primero ingresar al contenedor de jupiter en docker
+docker exec -it {Nombre del contenedor} bash
+
+
+#En caso de copiar el archivo airflow al contenedor de airflow
+
+docker cp airflow.cfg {Nombre del contenedor}:/root/airflow
+
+
+apt-get update
+apt-get install vim
+python -m venv airflow
+source airflow/bin/activate
+export AIRFLOW_HOME=~/airflow
+#echo $AIRFLOW_HOME
+pip install apache-airflow
+
+
+mv airflow.cfg airflow
+cd
+vim airflow.cfg
+
+
+#Modificamos el ip y colocamos la ip local  de nuestra pc y el puerto del contenedor de mysql
+sql_alchemy_conn = mysql://root:root@{ip de pc de mysql}:{puerto de mysql}/airflow
+executor = LocalExecutor
+airflow db init
+
+#en caso salga error instalar los paquetes
+
+pip install pymysql
+pip install mysqlclient pymysql
+
+airflow users create -e admin@example.org -f John -l Doe -p admin -r Admin -u admin
+airflow webserver -p 8080
+airflow scheduler
+
+
+
+
+docker cp airflow.cfg nombre-container:/root/airflow
+
+
+#copiar el archivo test dags.py a airflow dags
+
+docker cp airflow.cfg e95435a26207e3cd3d24a6cb746b3f39821c83377137c894b471b8798dcda46c:/root/airflow
+
+
+
+##En caso salga error de panda u otro modulo
+docker exec -it e95435a26207e3cd3d24a6cb746b3f39821c83377137c894b471b8798dcda46c bash
+source airflow/bin/activate
+
+pip install pymongo
+pip install pandas
+pip install sqlalchemy 
+pip install mysqlclient
+pip install google-cloud-storage
+pip install google-cloud-bigquery
+pip install pandasql
