@@ -6,7 +6,8 @@ El objetivo de estar demostrar el flujo ETL en python usando apache airflow como
 Tener instalado Docker con los contenedores de jupyter y SQL, se uilizara para al ejcucion de scripts  de python y apache airflow
 Tener las tablas en las fuentes de datos correspodientes (Azure Datalake Storage, Cloud Datalake Storage, MySQL Workbench, MongoDB)
 
-# Crear cluster con docker file
+## Contenedores SQL y Python en Jupiter
+* Crear cluster con docker file
 
     A partir del archivo [docker-compose.yml](https://github.com/menesesnd/Modulo-Data-Engineer-con-Python/blob/8e763a885a9f3e22b9b428e3980f60f75cfc0d2e/ProyectoEndToEndPython/Proyecto/docker-compose.yml) vamos a crear nuestro cluster.
 
