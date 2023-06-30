@@ -3,8 +3,8 @@ Trabajo final de Modulo
 El objetivo de estar demostrar el flujo ETL en python usando apache airflow como orquestador.
 
 ## Pre requisitos
-Tener instalado Docker con los contenedores de jupyter y SQL, se uilizara para al ejcucion de scripts  de python y apache airflow
-Tener las tablas en las fuentes de datos correspodientes (Azure Datalake Storage, Cloud Datalake Storage, MySQL Workbench, MongoDB)
+* Tener instalado Docker con los contenedores de jupyter y SQL, se uilizara para al ejcucion de scripts  de python y apache airflow
+* Tener las tablas en las fuentes de datos correspodientes (Azure Datalake Storage, Cloud Datalake Storage, MySQL Workbench, MongoDB)
 
 ## Contenedores SQL y Python en Jupiter
 * Crear cluster con docker file
@@ -21,7 +21,9 @@ Tener las tablas en las fuentes de datos correspodientes (Azure Datalake Storage
     Abrir el siguiente link para validar la instalacion:
 
     [localhost:8200](http://localhost:8200/)
-    Y en esta parte creamos o colocamos los archivos del respositorio para las ejecuciones de prueba correspondientes.
+
+   Y en esta parte creamos o colocamos los archivos del respositorio para las ejecuciones de prueba correspondientes.
+
 ## Explicación de la ingesta de Datos
 En el repositorio de GitHUB se tiene 4 carpetas las cuales se pasara a explicar el contenido de cada uno:
 * Config : Contiene las informacion de las credenciales a las conexiones de distinas fuentes de informacion (Azure, GCP, MongoDB)
