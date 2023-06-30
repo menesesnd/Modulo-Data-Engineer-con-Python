@@ -38,5 +38,14 @@ En el repositorio de GitHUB se tiene 4 carpetas las cuales se pasara a explicar 
 
  Luego se ejecutara los scripts o codigos del apache airflow , los cuales se puede utilizar los codigos en el archivo apache airflow.txt con las recomendaciones.
  Y por finalizar se mostrara la evidencia de la ejecucion del script Ingest-2.py con apache airflow, con los detalles de la ejecución.
- 
-  
+
+ ## Resultados esperados
+
+ * Muestra del codigo de python que se ejecutara
+   ![Muestra ingest-1](./images/ingest-1.jpg)
+
+   ![Muestra ingest-1](./images/ingest-2.jpg)
+
+   * Muestra de resultado de ejecución en apache airflow
+   ![resultado_airflow](./images/resultado_airflow.jpg)
+
